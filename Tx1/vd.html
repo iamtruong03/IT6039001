@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            display: flex;
+            border-bottom: 1px solid #969393;
+        }
+
+        .h-img {
+            width: 100px;
+        }
+
+        .h-left {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 18px;
+            flex: 1;
+            background-color: chartreuse;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .truyenngan {
+            margin-right: 150px;
+        }
+
+        .nav {
+            height: 30px;
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            justify-content: space-around;
+            list-style: none;
+            background-color: green;
+            line-height: 30px;
+        }
+
+        .nav-items:hover {
+            background-color: #969393;
+        }
+
+        .nav-items {
+            padding: 0 3px;
+        }
+
+        .nav2 {
+            list-style: none;
+            background-color: green;
+            display: none;
+        }
+
+        .nav-items:hover .nav2 {
+            display: block;
+            z-index: 1;
+        }
+
+        .container {
+            height: 560px;
+            background-color: chartreuse;
+            display: flex;
+        }
+
+        .con-left {
+            flex: 1;
+        }
+
+        .tong {
+            padding: 50px 0 0 50px;
+        }
+
+        .con-right {
+            flex: 3;
+            display: flex;
+        }
+
+        .con-right-img {
+            width: 200px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./Picture1.png" alt="ảnh" class="h-img">
+        <div class="h-left">
+            <span class="truyenngan">Truyện ngắn</span>
+            <span class="hay">Hay Trong Tuần</span>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav">
+            <li class="nav-items">Trang chủ</li>
+            <li class="nav-items">Truyện Blog</li>
+            <li class="nav-items">Truyện ngắn
+                <ul class="nav2">
+                    <li class="nav-items2">Truyện ngắn về tình yêu</li>
+                    <li class="nav-items2">Truyện ngắn về gia đình</li>
+                    <li class="nav-items2">Truyện ngắn về bạn bè</li>
+                    <li class="nav-items2">Truyện ngắn về đời sống</li>
+                </ul>
+            </li>
+            <li class="nav-items">Sách hay</li>
+            <li class="nav-items">Tâm sự</li>
+            <li class="nav-items">Tiểu thuyết</li>
+            <li class="nav-items">Tin tức</li>
+            <li class="nav-items">Truyện cười</li>
+            <li class="nav-items">Liên hệ</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="con-left">
+            <div class="tong">
+                <span class="tusach"><b>Tủ sách</b></span>
+                <ul class="list">
+                    <li class="list-items">Truyện nổi bật</li>
+                    <li class="list-items">Truyện mới</li>
+                    <li class="list-items">Tiểu thuyết mới</li>
+                    <li class="list-items">Truyện kiếm hiệp mới</li>
+                    <li class="list-items">Truyện khoa học viễn tưởng</li>
+                    <li class="list-items">Truyện tình cảm</li>
+                    <li class="list-items">Góc cười</li>
+                    <li class="list-items">Góc tâm sự</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="con-right">
+            <div class="div"><img class="con-right-img" src="./Picture1.png" alt="anh"></div>
+            <p class="content">- các bạn theo dõi facebook của mình tại địa chỉ: fb để nhận bài cũng như những tài liệu hàng ngày... và cũng share đáp án với mọi người nhé</p>
+        </div>
+    </div>
+    
+    <footer>Bản quyền CNTT_HAUI_TOAN</footer>
+</body>
+
+</html>

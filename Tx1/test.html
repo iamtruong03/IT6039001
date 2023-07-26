@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang web với menu cấp 2</title>
+  <style>
+    *{
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: yellow;
+    }
+
+    .menu1 ul {
+      list-style: none;
+      background-color:  #38c44d;
+      text-align: center;
+    }
+
+    .menu1 ul li {
+      display: inline-block;
+      position: relative;
+    }
+
+    .menu1 ul li a {
+      display: block;
+      text-align: center;
+      padding: 10px 16px;
+      text-decoration: none;
+    }
+
+    .nav ul li:hover {
+      background-color: #38c44d;
+    }
+
+    .menu1 ul li:hover > ul {
+      display: block;
+    }
+
+    .menu1 ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background-color:  #38c44d;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .menu1 ul ul li {
+      display: block;
+      width: 100%;
+    }
+
+    .menu1 ul ul li a {
+      display: block;
+      color: black;
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .menu1 nav ul ul li:hover {
+      background-color: #666;
+    }
+
+    .menu {
+      width: 200px;
+      background-color:  #38c44d;
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+   }
+
+   .menu ul li { 
+     position: relative;
+    }
+
+    .menu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    }
+
+    .menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100px;
+    }
+
+    .menu ul li:hover ul {
+      display: block;
+    }
+
+    .menu ul ul li li {
+       margin: 0;
+       border-top: 1px solid #38c44d;
+    }
+
+    .menu ul li ul li a {
+      padding: 10px;
+      background-color:  #38c44d;
+      text-decoration: none;
+    }
+
+    .menu ul li ul li a:hover {
+      background-color: #e0e0e0;
+    }
+    header {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: gray;
+      color: black;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    .container{
+      display: flex;
+    }
+        
+    .content {
+      margin: 20px;
+      flex: 2;
+      display: flex;
+    }
+    .cr{
+      display: flex;
+      flex: 1;
+    }
+    .ts{
+      flex: 2;
+      padding: 40px 0 0 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="tn">TRUYỆN NGẮN <br></h1>
+    <h1 class="hay">HAY TRONG TUẦN </h1>
+  </header>
+  <nav class="menu1">
+    <ul>
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#"">Truyện Blog</a></li>
+      <li><a href="#">Truyện ngắn</a>
+        <ul>
+          <li><a href="#">Truyện ngắn về tình yêu</a></li>
+          <li><a href="#">Truyện ngắn về gia đình</a></li>
+          <li><a href="#">Truyện ngắn về bạn bè</a></li>
+          <li><a href="#">Truyện ngắn về đời sống</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Sách hay</a></li>
+      <li><a href="#">Tâm sự</a></li>
+      <li><a href="#">Tin tức</a></li>
+      <li><a href="#">Truyện cười</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="cf">
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#"">Truyện Blog</a></li>
+          <li><a href="#">Truyện ngắn</a>
+            <ul>
+              <li><a href="#">Truyện ngắn về tình yêu</a></li>
+              <li><a href="#">Truyện ngắn về gia đình</a></li>
+              <li><a href="#">Truyện ngắn về bạn bè</a></li>
+              <li><a href="#">Truyện ngắn về đời sống</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Sách hay</a></li>
+          <li><a href="#">Tâm sự</a></li>
+          <li><a href="#">Tin tức</a></li>
+          <li><a href="#">Truyện cười</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  <div class="cr">
+    <div class="ts">
+      <span><b>Tủ sách</b></span>
+          <ul>
+            <li>Truyện nổi bật</li>
+            <li>Truyện mới</li>
+            <li>Tiểu thuyết mới</li>
+            <li>Truyện kiếm hiệp mới</li>
+            <li>Truyện khoa học viễn tưởng</li>
+            <li>Truyện trinh thám</li>
+            <li>Góc cười</li>
+            <li>Góc tâm sự</li>
+          </ul>
+    </div>
+  </div>
+  <div class="content">
+    <p>Đây là nội dung của trang web. Bạn có thể thêm bất kỳ nội dung nào bạn muốn ở đây.</p>
+  </div>
+  <footer>
+    <p>Bản quyền CNTT_HAUI.com</p>
+  </footer>
+</body>
+</html>
