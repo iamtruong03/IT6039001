@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Kết quả học tập</title>
+    <style>
+        table{
+            background-color: pink;
+            padding-right: 3%;
+        }
+        caption{
+            background-color: red;
+        }
+    </style>
+    <script>
+        function xemKQ(){
+            var diemHK1 = parseFloat(document.getElementById("diemhk1").value);
+            var diemHK2 = parseFloat(document.getElementById("diemhk2").value);
+            var diemTB = (diemHK1 + diemHK2)/2;
+            document.getElementById("diemtb").value=diemTB;
+            var KQ = "Được lên lớp";
+            if (diemTB < 4){
+                KQ = "Không được lên lớp";
+            }
+            document.getElementById("kq").value=KQ;
+            var XLHL;
+            if (diemTB >= 8){
+                var XLHL = "Giỏi";
+            } else if(diemTB >= 6.5){
+                var XLHL = "Khá";
+            } else if(diemTB >= 5){
+                var XLHL = "Trung bình";
+            } else {
+                var XLHL = "Yếu";
+            }
+            document.getElementById("xlhl").value=XLHL;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table>
+            <caption><h3>KẾT QUẢ HỌC TẬP</h3></caption>
+            <tr>
+                <td><lable for="diemhk1">Điểm HK1:</lable></td>
+                <td><input type="number" id="diemhk1"></td>
+            </tr>
+            <tr>
+                <td><lable for="diemhk2">Điểm HK2:</lable></td>
+                <td><input type="number" id="diemhk2"></td>
+            </tr>
+            <tr>
+                <td><lable>Điểm trung bình:</lable></td>
+                <td><input type="text" id="diemtb"></td>
+            </tr>
+            <tr>
+                <td><lable>Kết quả:</lable></td>
+                <td><input type="text" id="kq"></td>
+            </tr>
+            <tr>
+                <td><lable>Xếp loại học lực:</lable></td>
+                <td><input type="text" id="xlhl"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;"><input type="button" value="Xem kết quả" onclick="xemKQ()"></td>
+              </tr>
+        </table>
+    </form>
+</body>
+</html>

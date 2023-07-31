@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tính diện tích và chu bi hình tròn</title>
+    <script>
+        function Tinh(){
+            var banKinh = document.getElementById("bankinh").value;
+            var dienTich = Math.PI * banKinh * banKinh;
+            document.getElementById("dt").value = dienTich;
+            var chuVi = 2 * Math.PI * banKinh;
+            document.getElementById("cv").value =  chuVi;
+        }
+    </script>
+    <style>
+        table{
+            background-color: aquamarine;
+            padding-right: 3%;
+        }
+        caption{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <caption> <h3>DIỆN TÍCH và CHU VI HÌNH TRÒN</h3></caption>
+            <tr>
+                <td><lable for="bankinh">Bán kính:</lable></td>
+                <td> <input type="number" id="bankinh" name="bankinh"></td>
+            </tr>
+            <tr>
+                <td><lable>Diện tích:</lable></td>
+                <td><input type="text" id="dt"></td>
+            </tr>
+            <tr>
+                <td> <lable>Chu vi:</lable></td>
+                <td> <input type="text" id="cv"></td>
+            </tr>
+            <tr>
+                <td colspan="2"  style="text-align:center;"> <input type="button" value="Tính" onclick="Tinh()";</td>
+            </tr>
+        </table>   
+    </form>
+</body>
+</html>

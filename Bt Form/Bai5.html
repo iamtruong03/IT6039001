@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kết quả thi đại học</title>
+    <script>
+        function xemKQ(){
+            var toan = parseFloat(document.getElementById("toan").value);
+            var ly = parseFloat(document.getElementById("ly").value);
+            var hoa = parseFloat(document.getElementById("hoa").value);
+            var diemChuan = parseFloat(document.getElementById("diemchuan").value);
+            var tongDiem = toan + ly + hoa;
+            var ketQua = "Không đạt";
+            if (tongDiem >= diemChuan) {
+                ketQua = "Đạt";
+            }
+            document.getElementById("tongdiem").value = tongDiem;
+            document.getElementById("ketqua").value = ketQua;
+
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table>
+            <caption><h3>KẾT QUẢ THI ĐẠI HỌC</h3></caption>
+            <tr>
+                <td><label for="toan">Toán:</label></td>
+                <td><input type="number" id="toan"></td>
+            </tr>
+            <tr>
+                <td><label for="ly">Lý:</label></td>
+                <td><input type="number" id="ly"></td>
+            </tr>
+            <tr>
+                <td><label for="hoa">Hóa:</label></td>
+                <td><input type="number" id="hoa"></td>
+            </tr>
+            <tr>
+                <td><label for="diemchuan">Điểm chuẩn:</label></td>
+                <td><input type="number" id="diemchuan"></td>
+            </tr>
+            <tr>
+                <td><label>Tổng điểm:</label></td>
+                <td><input type="text" id="tongdiem" readonly></td>
+            </tr>
+            <tr>
+                <td><label>Kết quả thi:</label></td>
+                <td><input type="text" id="ketqua" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;" ><input type ="button" value="Xem kết quả" onclick="xemKQ()"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
