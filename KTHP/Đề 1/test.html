@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop down</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    background-image: url('R.jpg');
+    background-position-y: -90px;
+    background-size:cover;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header {
+    background-color:rgb(234, 228, 220);
+    height: auto;
+    display:flex;
+    padding: 5px 300px 0px 5px;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0px 0px;
+}
+#menu {        
+    background-color: rgb(69, 62, 53);
+}
+nav {
+    display:flex;
+    justify-content:space-between;
+    justify-items: center;
+}
+#tool {
+    padding: 10px 200px 5px 5px;
+}
+#main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+}
+#main-menu li a {
+    text-decoration: none;
+    color:rgb(222, 225, 228);
+    display:block;
+    padding: 10px 40px 2px 5px;
+}
+#main-menu li {
+    position: relative;
+    height: auto;
+}
+#main-menu ul.sub-menu {
+    position: absolute;
+    background-color: rgb(96, 87, 75);
+    padding: 0px 0px;
+    list-style: none;
+    width: 100px;
+    border-bottom: 1px solid #a5a3a3;
+    display: none;
+    top: 100%;
+    
+}
+#main-menu li:hover ul.sub-menu {
+    display:block;
+}
+#main-menu ul.sub-menu a {
+    padding: 10px 15px;
+    border-bottom: 1px solid #a5a3a3;
+}
+#main-menu ul.sub-menu li:last-child a {
+    border-bottom: none;
+} 
+#main-menu ul.sub-menu li:hover a {
+    border-bottom: 1px solid #c1c1c1;
+} 
+#main-menu>li>a {
+    position: relative;
+    height: 30px;
+}
+#main-menu>li>a::before {    
+    content: "";
+    height:4px;
+    width:0px;
+    background-color: brown;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    top:42px;
+}
+#main-menu>li:hover>a::before {
+    width:100%;
+    top:42px;
+}
+#main-menu li:hover {
+    background-color: rgb(84, 79, 79);
+}
+
+/*content*/
+
+section {
+    background-color:rgb(132, 173, 128);
+    height:auto;
+    
+}
+section ul {
+    float: left;
+}
+section ul li {
+    line-height: 30px;
+}
+section>a>img {
+    justify-content: space-between;
+    padding-top:5px;
+    padding-right:100px;
+}
+article {
+    display:flex;
+    background-color: brown;
+    padding-left:40px;
+    padding-right:40px;
+    justify-content: space-between;
+}
+article ul {
+    list-style: none;
+}
+article li a {
+    text-decoration: none;
+    color:#010101;
+}
+/* footer*/
+footer {
+    background-color:antiquewhite;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+#intro {
+    justify-content: space-between;
+    display:flex;
+}
+footer #intro ul:last-child {
+    list-style: none;
+    text-align:right;
+}
+    </style>
+</head>
+<body>  
+    <div id="wrapper">
+        <!-- header -->
+        <header>
+            <div id="image" ><a href=""><img src="logo.jpg" width="80px"></a></div>
+            <div id="brand"  style="font-size:20px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">CÔNG NGHỆ THÔNG TIN<br>Lập trình WEB</div>
+            <div id="social">
+                <br><br>
+                <a href=""><img src="logo.jpg" width="20px"></a>
+                <a href=""><img src="logo.jpg" width="20px"></a>
+                <a href=""><img src="logo.jpg" width="20px"></a>
+            </div>
+        </header>
+        <!-- menu -->
+        <div id="menu">
+            <nav class="container">
+                <ul id="main-menu">
+                    <li><a href="">menu1</a></li>
+                    <li><a href="">menu2</a></li>
+                    <li><a href="">menu3</a>
+                        <ul class="sub-menu">
+                            <li><a href="">menu3.1</a></li>
+                            <li><a href="">menu3.2</a></li>
+                            <li><a href="">menu3.3</a></li>
+                            <li><a href="">menu3.4</a></li>
+                            <li><a href="">menu3.5</a></li>
+                            <li><a href="">menu3.6</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">menu4</a></li>
+                    <li><a href="">menu5</a></li>
+                    <li><a href="">menu6</a></li>
+                    <li><a href="">menu7</a></li>
+                    <li><a href="">menu8</a></li>
+                </ul>
+            <div id="tool">
+                <input type="text" id="name">
+                <button type="button" id="search">Tìm kiếm</button>
+            </div>    
+            </nav>
+         <!--content-->
+     <div id="content">
+        <!---->
+            <section>
+                <ul type="none">
+                    <span style="font-size:40px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Lĩnh vực</span>
+                    <span style="font-size:30px">phổ biến</span> <br><br>
+                    <li><img src="logo.jpg" width="20px"> aaaaaaaaaaaaaaaaaaaaaaaaaaaasadasdasdasa</li>
+                    <li><img src="logo.jpg" width="20px"> Tbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</li>
+                    <li><img src="logo.jpg" width="20px"> ccccccccccccccccccccccccccccc</li>
+                </ul>
+                <a href=""><img src="logo.jpg" width="300px"></a>
+                <a href=""><img src="logo.jpg" width="300px"></a>
+            </section>
+        <!---->
+            <article>
+                <ul>
+                    <li>
+                        <a href="">
+                         <h4>CÔNG NGHỆ THÔNG TIN <h4>
+                         <img src="logo.jpg" width="300px">
+                          <p>ngành học hot nhất hiện nay</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                         <h4>CÔNG NGHỆ THÔNG TIN <h4>
+                         <img src="logo.jpg" width="300px">
+                          <p>ngành học hot nhất hiện nay</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                         <h4>CÔNG NGHỆ THÔNG TIN <h4>
+                         <img src="logo.jpg" width="300px">
+                          <p>ngành học hot nhất hiện nay</p>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </div>
+        <!--footer-->
+        <footer>
+            <div id="intro">
+                <ul>
+                    <b>Giới thiệu </b>
+                    <li>lịch sử</li>
+                    <li>thành tựu</li>
+                </ul>
+                <ul>
+                    <b>Giới thiệu </b>
+                    <li>lịch sử</li>
+                    <li>thành tựu</li>
+                </ul>
+                <ul>
+                    <b>Giới thiệu </b>
+                    <li>lịch sử</li>
+                    <li>thành tựu</li>
+                </ul>
+                <ul>
+                    <b>Giới thiệu </b>
+                    <li>lịch sử</li>
+                    <li>thành tựu</li>
+                </ul>
+            </div>
+        </footer>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

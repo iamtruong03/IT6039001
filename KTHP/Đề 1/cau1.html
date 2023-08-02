@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        nav ul{
+            list-style: none;
+            text-align: center;
+            background-color: black;
+        }
+        nav ul li{
+            display: inline-block;
+            position: relative;
+        }
+        nav ul li a{
+            display: block;
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li:hover{
+            background-color: pink;
+        }
+        nav ul li:hover > ul{
+            display: block;
+        }
+        nav ul ul{
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 120px;
+            z-index: 1;
+        }
+        nav ul ul li{
+            display: block;
+            width: 100%;
+        }
+        nav ul ul li a{
+            display: block;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav ul ul li:hover{
+            background-color: white;
+        }
+        <style>
+            
+            .stars {
+                display: flex;
+                justify-content: center;
+             }
+  
+            .stars span {
+                 font-size: 24px;
+                margin-right: 5px;
+                color: gold;
+            }
+</style>
+    </style>
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; align-items: center;">
+          <img src="1.png" style="display: inline-block;">
+          <p style="color: white; margin-left: 10px;">Logo</p>
+        </div>
+        <form style="display: flex; flex-grow: 1; justify-content: center; align-items: center;">
+          <input type="search" id="search" style="margin-right: 10px;">
+          <button type="submit">Tìm kiếm</button>
+        </form>
+        <p style="color: white; background-color: #FF3399; padding: 10px;">0 Item($)-$0.00</p>
+      </header>
+   <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Men</a>
+            <ul>
+                <li><a href="#"><u>Clothing (0)</u></a></li>
+                <li><a href="#">Coaats (0)</a></li>
+                <li><a href="#">T-Shirts (0)</a></li>
+                <li><a href="#">Tennis (0)</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Clothing</a></li>
+        <li><a href="#">Jewelry</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Clothing</a></li>
+        <li><a href="#">Jeans</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">The Girl Racing Bicycle</a></li>
+    </ul>
+   </nav>
+   <div class="content">
+    <div style="display: inline-block;">
+        <img src="2.png" style="width: 400px;height: 200px;">
+        <div style="background-color: #003366;">
+            <h3 style="color: white;">Apple Cinema 30"</h3>
+            <div class="stars">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+              </div>
+            <p style="color: red;display: inline-block;">$110.00</p>
+            <p style="color: white;display: inline-block;"><del>$120.00</del></p>
+        </div>
+    </div>
+    <div style="text-align: center;display: inline-block;">
+        <img src="2.png" style="width: 400px;height: 200px;">
+        <div style="background-color: #003366;">
+            <h3 style="color: white;">Apple Cinema 30"</h3>
+            <div class="stars">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+              </div>
+            <p style="color: red;display: inline-block;">$110.00</p>
+            <p style="color: white;display: inline-block;"><del>$120.00</del></p>
+        </div>
+    </div>
+    <div style="text-align: right;display: inline-block;">
+        <img src="2.png"style="width: 400px;height: 200px;">
+        <div style="background-color: #003366;">
+            <h3 style="color: white;">Apple Cinema 30"</h3>
+            <div class="stars">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+              </div>
+            <p style="color: red;display: inline-block;">$110.00</p>
+            <p style="color: white;display: inline-block;"><del>$120.00</del></p>
+        </div>
+    </div>
+   </div>
+</body>
+</html>

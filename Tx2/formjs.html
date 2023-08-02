@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Đăng ký thông tin</title>
+    <script>
+        function validateEmail(email) {
+            var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Biểu thức chính quy kiểm tra địa chỉ email
+            return regex.test(email);
+        }
+
+        function validateInput() {
+            var email = document.getElementById("email").value;
+            var phoneNumber = document.getElementById("sdt").value;
+            var emailErrorMsg = "";
+            var phoneNumberErrorMsg = "";
+            if (!validateEmail(email)) {
+                emailErrorMsg = "Địa chỉ email không hợp lệ, vui lòng nhập lại.";
+            }
+            if (!/^\d{10}$/.test(phoneNumber)) {
+                phoneNumberErrorMsg = "Số điện thoại không hợp lệ, vui lòng nhập lại.";
+            }
+            document.getElementById("email-error").innerHTML = emailErrorMsg;
+            document.getElementById("sdt-error").innerHTML = phoneNumberErrorMsg;
+        }
+        
+        function validateForm() {
+            var inputFields = document.getElementsByTagName("input");
+            var errorMsg = "";
+            for (var i = 0; i < inputFields.length; i++) {
+                if (inputFields[i].value === "" && inputFields[i].type !== "submit" && inputFields[i].type !== "reset") {
+                    errorMsg = "Vui lòng điền đầy đủ thông tin.";
+                    break;
+                }
+            }
+            document.getElementById("form-error").innerHTML = errorMsg;
+            return errorMsg === "";
+        }
+    </script>
+    <style></style>
+</head>
+<body>
+    <form onsubmit="return validateForm();">
+        <table>
+            <caption><h3>Dang Ky Thong Tin</h3></caption>
+            <tr>
+                <td><label for="tdn">Ten dang nhap:</label></td>
+                <td><input type="text" id="tdn"></td>
+            </tr>
+            <tr>
+                <td><label for="mk">Mat khau:</label></td>
+                <td><input type="password" id="mk"></td>
+            </tr>
+            <tr>
+                <td><label>Gioi tinh:</label></td>
+                <td>
+                    <input type="radio" id="male" >
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female">
+                    <label for="female">Nữ</label></td>
+            </tr>
+            <tr>
+                <td><label for="sdt">So dien thoai:</label></td>
+                <td>
+                  <input type="tel" id="sdt" onblur="validateInput()">
+                  <br>
+                  <span id="sdt-error" style="color: red;"></span>
+                </td>
+              </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td>
+                    <input type="text" id="email" onblur="validateInput()"><br>
+                    <span id="email-error" style="color: red;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gt">Gioi thieu:</label></td>
+                <td><input type="text" id="gt" style="height: 40px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Dang ky">
+                    <input type="reset" value="Huy bo">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <span id="form-error" style="color: red;"></span>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
