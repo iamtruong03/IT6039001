@@ -1,0 +1,43 @@
+<form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br><br>
+  <input type="submit" value="Submit" onclick="validateForm()">
+</form>
+
+<script>
+  function validateForm() {
+    // Lấy giá trị của username và password
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Kiểm tra xem username và password có bị để trống không
+    if (username == "" || password == "") {
+      alert("Bạn nhập sai");
+      return false;
+    }
+
+    // Kiểm tra độ dài của password
+    if (password.length < 8) {
+      alert("Bạn nhập sai");
+      return false;
+    }
+
+    // Kiểm tra xem password có ít nhất một ký tự in hoa và một ký tự số không
+    var regex = /^(?=.*[A-Z])(?=.*\d)/;
+    if (!regex.test(password)) {
+      alert("Bạn nhập sai");
+      return false;
+    }
+
+    // Kiểm tra xem password có bắt đầu bằng ký tự số không
+    if (/^[0-9]/.test(password)) {
+      alert("Bạn nhập sai");
+      return false;
+    }
+
+    alert("Bạn nhập đúng");
+    return true;
+  }
+</script>
