@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            background-color: rgb(67, 189, 128);
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-around;
+            background-color: antiquewhite;
+        }
+
+        .item {
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .list2 {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: antiquewhite;
+            width: 150px;
+            display: none;
+        }
+
+        .item:hover .list2 {
+            display: block;
+        }
+
+        .item2 {
+            padding: 10px 20px;
+            border-bottom: 1px solid black;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .right {
+            flex: 1;
+        }
+
+        .center {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        .card {
+            display: flex;
+            column-gap: 20px;
+            width: 500px;
+        }
+
+        .left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        table, th {
+            border: 1px solid black;
+        }
+
+        td {
+            padding-left: 20px;
+        }
+
+        .td1, .td2 {
+            border-bottom: 1px solid black;
+        }
+
+        .td2, .td3 {
+            padding-top: 20px;
+        }
+
+        footer {
+            background-color: rgb(51, 186, 73);
+            width: 100vw;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        .list3 {
+            background-color: antiquewhite;
+            width: 150px;
+        }
+
+        .item3 {
+            padding: 10px 20px;
+            border-bottom: 1px solid black;
+            position: relative;
+        }
+
+        .list4 {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            background-color: antiquewhite;
+            width: 120px;
+            display: none;
+        }
+
+        .item3:hover .list4 {
+            display: block;
+        }
+
+        .item4 {
+            border-bottom: 1px solid black;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="" width="80px" alt="logo">
+        <div class="header">
+            <h2>TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP HÀ NỘI <br> KHOA CÔNG NGHỆ THÔNG TIN</h2>
+        </div>
+        <img src="./logo.png" width="80px" alt="logo">
+    </header>
+
+    <div class="nav">
+        <ul class="list">
+            <li class="item"><a href="">Kinh tế</a></li>
+            <li class="item"><a href="">Văn hóa xã hội</a>
+                <ul class="list2">
+                    <li class="item2"><a href="">Kinh tế 1</a></li>
+                    <li class="item2"><a href="">Kinh tế 2</a></li>
+                    <li class="item2"><a href="">Kinh tế 3</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="">Giáo dục cộng</a></li>
+            <li class="item"><a href="">Học nữa học</a></li>
+            <li class="item"><a href="">Vừa học vừa</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="right">
+            <h3 style="margin-bottom: 20px;">Tủ sách</h3>
+            <ul class="list3">
+                <li class="item3">Kinh tế</li>
+                <li class="item3">Văn hóa xã hỗi
+                    <ul class="list4">
+                        <li class="item4"><a href="">Kinh tế 1</a></li>
+                        <li class="item4"><a href="">Kinh tế 2</a></li>
+                        <li class="item4"><a href="">Kinh tế 3</a></li>
+                    </ul>
+                </li>
+                <li class="item3">Giáo dục cộng</li>
+                <li class="item3">Học nữa học</li>
+                <li class="item3">Vừa học vừa</li>
+            </ul>
+        </div>
+
+        <div class="center">
+            <div class="card">
+                <img src="./124021.png" width="100px" alt="">
+                <div>
+                    <h4>Mẫu tin Một</h4>
+                    <p>Thủ khoa đầu ra trường DH Dược Hà Nội Trịnh Thị Vân Anh không những học giỏi mà em còn tích cực tham gia các hoạt động xã hội có ý nghĩa</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./124021.png" width="100px" alt="">
+                <div>
+                    <h4>Mẫu tin Một</h4>
+                    <p>Thủ khoa đầu ra trường DH Dược Hà Nội Trịnh Thị Vân Anh không những học giỏi mà em còn tích cực tham gia các hoạt động xã hội có ý nghĩa</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./124021.png" width="100px" alt="">
+                <div>
+                    <h4>Mẫu tin Một</h4>
+                    <p>Thủ khoa đầu ra trường DH Dược Hà Nội Trịnh Thị Vân Anh không những học giỏi mà em còn tích cực tham gia các hoạt động xã hội có ý nghĩa</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="left">
+            <div style="display: flex;">
+                <p style="text-decoration: underline;">Đăng ký</p>
+                <p style="margin: 0 5px;">|</p>
+                <p style="text-decoration: underline;">Đăng nhập</p>
+            </div>
+
+            <table>
+                <tr><th style="background-color: aqua;">Giỏ hàng</th></tr>
+                <tr><td>Tổng cộng 0 VNĐ</td></tr>
+                <tr><td>Xem giỏ hàng</td></tr>
+                <tr><td>Thanh toán</td></tr>
+            </table>
+
+            <table>
+                <tr><th>Hỗ trợ trực tuyến</th></tr>
+                <tr><td style="background-color: burlywood;">Adim Wed</td></tr>
+            </table>
+
+            <table>
+                <tr><th style="background-color: burlywood;">Tin mới</th></tr>
+                <tr><td class="td1">Máy in Epson T60 nhát 2 đèn đỏ</td></tr>
+                <tr><td class="td2">Khi dung may in phun Epson dung he thong muc ngoai doi luc ban gap mot vai su co nho</td></tr>
+                <tr><td class="td3">Sua loi may in Epson T60, T50 khong nhan muc</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>Bản quyền Khoa CNTT</footer>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu dọc</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #336699;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav h3 {
+            color: white;
+            background-color: #336699;
+            padding: 10px;
+        }
+        nav {
+            background-color: white;
+            border: 1px solid black;
+            width: 30%;
+            float: left;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+        }
+        nav ul li:hover > a {
+            color: #336699;
+        }
+        
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid black;
+            padding: 10px;
+            left: 100%;
+        }
+        nav ul li:hover ul{
+            display: block;
+            z-index: 1; 
+        }
+        nav ul li ul li {
+            margin: 0;
+        }
+        nav ul li ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        nav ul li ul li a:hover {
+            background-color: white;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 70%;
+            float: right;
+        }
+        .content figure {
+            width: 24%;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .content img {
+            width: 100%;
+        }
+        .content figcaption {
+            text-align: center;
+            margin-top: 5px;
+            color: black;
+        }
+        .content figure:hover figcaption {
+            color: red;
+        }
+        .content .old-price {
+            color: black;
+        }
+        .content .new-price {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="anh1.png" alt="">
+        <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm...">
+        </div>
+        <li><a href="#">Cart</a></li>
+    </header>
+    <div class="main">
+        <nav>
+            <h3>ALL CATEGORY </h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Laptops</a>
+                    <ul>
+                        <li><a href="#">Dell (0)</a></li>
+                        <li><a href="#">Men (0)</a></li>
+                        <li><a href="#">Purse (0)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Shocks</a></li>
+                <li><a href="#">Cloth</a></li>
+                <li><a href="#">Cosmetic</a></li>
+                <li><a href="#">Desktops</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">MP3 Player</a></li>
+                <li><a href="#">+ MORE</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <figure>
+                <img src="anh1.png" alt="Image 1">
+                <figcaption>Vòng đeo tay</figcaption>
+                <div class="new-price">590.000 <u>đ</u> </div>
+                <div class="old-price"><del>900.000 </del> <u>đ</u></div>
+            </figure>
+            <figure>
+                <img src="anh1.png" alt="Image 1">
+                <figcaption>Chú thích 1</figcaption>
+                <div class="old-price">Đơn giá chưa giảm</div>
+                <div class="new-price">Đơn giá đã giảm</div>
+            </figure>
+            <figure>
+                <img src="anh1.png" alt="Image 1">
+                <figcaption>Chú thích 1</figcaption>
+                <div class="old-price">Đơn giá chưa giảm</div>
+                <div class="new-price">Đơn giá đã giảm</div>
+            </figure>
+            <figure>
+                <img src="anh1.png" alt="Image 1">
+                <figcaption>Chú thích 1</figcaption>
+                <div class="old-price">Đơn giá chưa giảm</div>
+                <div class="new-price">Đơn giá đã giảm</div>
+            </figure>
+            <figure>
+                <img src="anh1.png" alt="Image 1">
+                <figcaption>Chú thích 1</figcaption>
+                <div class="old-price">Đơn giá chưa giảm</div>
+                <div class="new-price">Đơn giá đã giảm</div>
+            </figure>
+            <figure>
+                <img src="anh1.png" alt="Image 1">
+                <figcaption>Chú thích 1</figcaption>
+                <div class="old-price">Đơn giá chưa giảm</div>
+                <div class="new-price">Đơn giá đã giảm</div>
+            </figure>
+            <figure>
+                <img src="anh1.png" alt="Image 1">
+                <figcaption>Chú thích 1</figcaption>
+                <div class="old-price">Đơn giá chưa giảm</div>
+                <div class="new-price">Đơn giá đã giảm</div>
+            </figure>
+            <figure>
+                <img src="anh1.png" alt="Image 1">
+                <figcaption>Chú thích 1</figcaption>
+                <div class="old-price">Đơn giá chưa giảm</div>
+                <div class="new-price">Đơn giá đã giảm</div>
+            </figure>
+            
+        </div>
+    </div>
+    <footer></footer>
+</body>
+</html>

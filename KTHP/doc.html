@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu Dọc Cấp 2</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #f0f0f0;
+      float: left;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      position: relative;
+    }
+
+    .sidebar ul li a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .sidebar ul li:hover > a {
+      background-color: #ccc;
+    }
+
+    .sidebar ul li ul {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background-color: #f0f0f0;
+      min-width: 200px;
+    }
+
+    .sidebar ul li:hover > ul {
+      display: block;
+    }
+
+    .sidebar ul li ul li {
+      display: block;
+    }
+
+    .sidebar ul li ul li a {
+      padding: 5px 10px;
+    }
+
+    .sidebar ul li ul li a:hover {
+      background-color: #ccc;
+    }
+
+    .content {
+      margin-left: 200px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="#">Trang chủ</a></li>
+      <li>
+        <a href="#">Danh mục</a>
+        <ul>
+          <li><a href="#">Danh mục 1</a></li>
+          <li><a href="#">Danh mục 2</a></li>
+          <li><a href="#">Danh mục 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Giới thiệu</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <!-- Nội dung trang web -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function validateForm() {
+    let username = document.getElementById("txt").value;
+    let password = document.getElementById("pass").value;
+
+    if (username == "" || password == "") {
+        alert("Khong dc de trong");
+        return false;
+    }
+
+    if (password.length < 8) {
+        alert("Bạn nhập sai");
+        return false;
+    }
+
+    let hasUpperCase = /[A-Z]/.test(password);
+    let hasNumber = /\d/.test(password);
+    let startsWithNumber = /^\d/.test(password);
+
+    if (!hasUpperCase || !hasNumber || startsWithNumber) {
+        alert("Bạn nhập sai");
+        return false;
+    }
+
+    alert("Bạn nhập đúng");
+    return true;
+}
+
+</script>
+<body>
+    <table>
+        <tr>
+            <td>User name</td>
+            <td><input type="text" id="txt"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" id="pass"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Kiem tra Password" onclick="validateForm()"></td>
+        </tr>
+    </table>
+</body>
+</html>

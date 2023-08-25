@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #33CCFF;
+        }
+        .dong1,
+        .dong2 {
+            display: flex;
+            align-items: center;
+        }
+        .dong2{
+            justify-content: center ;
+        }
+        .dong1 img {
+            margin-right: 350px;
+        }
+
+        .chu {
+            text-align: center;
+        }
+
+        .chu h2 {
+            color: #0033CC;
+        }
+        .nav1 ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav1 ul li{
+            display: inline-block;
+            position: relative;
+        }
+        .nav1 ul li a{
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .nav1 ul li:hover > a{
+            background-color: green;
+            color: yellow;
+        }
+        .nav1 ul li ul{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color:#33CCFF ;
+        }
+        .nav1 ul li:hover > ul{
+            display: block;
+        }
+        .nav1 ul li ul li{
+            display: block;
+        }
+        .nav1 ul li ul li a{
+            padding: 5px 10px;
+        }
+        .nav1 ul li ul li a:hover{
+            background-color: green;
+            color: yellow;
+        }
+        .dong2 input[type="text"] {
+            width: 300px;
+        }
+      
+        .main {
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+        }
+
+        .nav2 {
+            background-color: #33FFFF  ;
+            border: 1px solid black;
+        }
+        .nav2 ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav2 ul li {
+            position: relative;
+        }
+        .nav2 ul li a{
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .nav2 ul li:hover > a {
+            color: yellow; 
+        }
+        .nav2 ul li ul {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: #33FFFF; 
+            min-width: 200px;
+        }
+        .nav2 ul li:hover > ul {
+            display: block;
+        }
+        .nav2 ul li ul li{
+            display: block;
+        }
+        .nav2 ul li ul li a{
+            padding: 5px 10px;
+            color: white; 
+        }
+        .nav2 ul li ul li a:hover{
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .right {
+            padding: 10px;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="dong1">
+            <img src="4.png" alt="" width="80" height="80">
+            <div class="chu">
+                <h2>BAO THANH MINERAL & PRODUCTION COMPANY LIMITED</h2>
+                <p>Address: Bụt Phong Village, Lien Son Commune, Kim Bang District, Ha Nam Province</p>
+            </div>
+        </div>
+        <div class="dong2">
+            <nav class="nav1">
+                <ul>
+                    <li><a href="#">TRANG CHỦ</a></li>
+                    <li><a href="#">SẢN PHẨM</a>
+                        <ul>
+                            <li><a href="#">SẢN PHẨM 1</a></li>
+                            <li><a href="#">SẢN PHẨM 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">GIỚI THIỆU</a></li>
+                    <li><a href="#">TIN TỨC</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                </ul>
+            </nav>
+            <input type="text" value="Nhập từ khóa tìm kiếm">
+        </div>
+    </header>
+    <div class="main">
+        <nav class="nav2">
+            <h3 style="color: white; background-color: #0066FF  ;">THEO ỨNG DỤNG</h3>
+            <ul>
+                <li><a href="#">NL Ngành thức ăn chăn nuôi</a></li>
+                <li><a href="#">NL Ngành thủy hải sản </a></li>
+                <li><a href="#">NL Ngành SX phân bón </a></li>
+                <li><a href="#">Nguyên Vạt Liệu Xây Dựng </a></li>
+                <li><a href="#">Các ngành khác</a>
+                    <ul>
+                        <li><a href="#">NL Ngành kính</a></li>
+                        <li><a href="#">NL Ngành luyện kim</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>Content</h1>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

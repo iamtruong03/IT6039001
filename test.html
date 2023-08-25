@@ -10,6 +10,7 @@
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
 }
@@ -3167,16 +3168,17 @@ h3.title-table:before{
     width:100%;
 }
 
+    .cl-blue {
+      color: #0066cc; 
+    }
     </style>
-    <script>
-        
-    </script>
     </head>
-    <body><h1>Công nợ sinh viên</h1>
-                    <table id="tblCongNo" class="table table-bordered bg-custom responsive text-center" width="100%">
+    <body>
+      <h1>Công nợ sinh viên</h1>
+      <table id="tblCongNo" class="table table-bordered bg-custom responsive text-center" width="100%">
                         <thead>
-                            <tr>
-                                <th>Mã</th>
+                          <tr>
+                              <th>Mã</th>
                                 <th>Nội dung thu</th>
                                 <th>Tín chỉ</th>
                                 <th>Số tiền (VNĐ)</th>
@@ -3186,9 +3188,37 @@ h3.title-table:before{
                                 <th>Trạng thái</th>
                             </tr>
                         </thead>
-                        <tbody><tr> <td>0101000421</td> <td class="text-left">Điện tử công suất</td> <td>2</td> <td class="text-right">1,046,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="text-right">1,046,000</td> <td class="cl-red">Chưa nộp</td></tr><tr> <td>0101000491</td> <td class="text-left">Điều khiển số</td> <td>2</td> <td class="text-right">1,046,000</td> 
-                            <td class="text-right">0</td> <td class="text-right">0</td> <td class="text-right">1,046,000</td> <td class="cl-red">Chưa nộp</td></tr><tr> <td>0101000941</td> <td class="text-left">Hệ thống thông tin công nghiệp</td> <td>2</td> <td class="text-right">1,046,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="text-right">1,046,000</td> <td class="cl-red">Chưa nộp</td></tr><tr> <td>0101001258</td> <td class="text-left">Kỹ thuật chiếu sáng</td> <td>2</td> <td class="text-right">1,046,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="text-right">1,046,000</td> <td class="cl-red">Chưa nộp</td></tr><tr> <td>0101001322</td> <td class="text-left">Kỹ thuật đo lường các đại lượng không điện</td> <td>2</td> <td class="text-right">1,046,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="text-right">1,046,000</td> <td class="cl-red">Chưa nộp</td></tr><tr> <td>0101003928</td> <td class="text-left">Lịch sử Đảng Cộng sản Việt Nam</td> <td>2</td> <td class="text-right">726,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="text-right">726,000</td> <td class="cl-red">Chưa nộp</td></tr><tr> <td>0101003527</td> <td class="text-left">ứng dụng matlab-simulink trong điều khiển</td> <td>2</td> <td class="text-right">1,046,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="text-right">1,046,000</td> <td class="cl-red">Chưa nộp</td></tr><tr> <td>0101003651</td> <td class="text-left">Vi xử lý trong đo lường điều khiển 1</td> <td>2</td> <td class="text-right">1,046,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="text-right">1,046,000</td> <td class="cl-red">Chưa nộp</td></tr><tr> <td>0101002768</td> <td class="text-left">Thực tập điện tử công nghiệp</td> <td>1</td> <td class="text-right">523,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="text-right">523,000</td> <td class="cl-red">Chưa nộp</td></tr><tr> <td>DC</td> <td class="text-left">Tiền đặt cọc sử dụng tài sản cả khóa học</td> <td>0</td> <td class="text-right">500,000</td> <td class="text-right">500,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="cl-red">Chưa nộp</td></td></tr>
-                            <tr> <td>0101000591</td> <td class="text-left">Kỹ thuật số</td> <td>3</td> <td class="text-right">1,578,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="text-right">1,578,000</td> <td class="cl-red">Chưa nộp</td></td></tr>
+                        <tbody>
+                          <tr>
+                            <td>0101000491</td>
+                            <td class="text-left">Điều khiển số</td>
+                            <td>3</td>
+                            <td class="text-right">1,569,000</td>
+                            <td class="text-right">1,569,000</td>
+                            <td class="text-right">0</td>
+                            <td class="text-right">0</td>
+                            <td class="cl-blue">Đã thanh toán</td>
+                          </tr>
+                          <tr> <td>0101000591</td> <td class="text-left">Kỹ thuật số</td> <td>3</td> <td class="text-right">1,569,000</td> <td class="text-right">1,569,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="cl-blue">Đã thanh toán</td></tr>
+                          <tr> <td>0101000421</td> <td class="text-left">Điện tử công suất</td> <td>3</td> <td class="text-right">1,569,000</td> <td class="text-right">1,569,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <<td class="cl-blue">Đã thanh toán</td></tr>
+                          <tr> <td>0101000941</td> <td class="text-left">Hệ thống thông tin công nghiệp</td> <td>2</td> <td class="text-right">1,046,000</td> <td class="text-right">1,046,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="cl-blue">Đã thanh toán</td>></tr>
+                          <tr> <td>0101001258</td> <td class="text-left">Kỹ thuật chiếu sáng</td> <td>2</td> <td class="text-right">1,046,000</td> <td class="text-right">1,046,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="cl-blue">Đã thanh toán</td></tr>
+                          <tr> <td>0101001322</td> <td class="text-left">Kỹ thuật đo lường các đại lượng không điện</td> <td>2</td> <td class="text-right">1,046,000</td> <td class="text-right">1,046,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="cl-blue">Đã thanh toán</td></tr>
+                          <tr> <td>0101003928</td> <td class="text-left">Lịch sử Đảng Cộng sản Việt Nam</td> <td>2</td> <td class="text-right">726,000</td> <td class="text-right">726,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="cl-blue">Đã thanh toán</td></tr>
+                          <tr> <td>0101003527</td> <td class="text-left">ứng dụng matlab-simulink trong điều khiển</td> <td>2</td> <td class="text-right">1,046,000</td> <td class="text-right">1,046,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="cl-blue">Đã thanh toán</td></tr>
+                          <tr> <td>0101003651</td> <td class="text-left">Vi xử lý trong đo lường điều khiển 1</td> <td>2</td> <td class="text-right">1,046,000</td> <td class="text-right">1,046,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="cl-blue">Đã thanh toán</td></tr>
+                          <tr> <td>0101002768</td> <td class="text-left">Thực tập điện tử công nghiệp</td> <td>2</td> <td class="text-right">1,046,000</td> <td class="text-right">1,046,000</td> <td class="text-right">0</td> <td class="text-right">0</td> <td class="cl-blue">Đã thanh toán</td></tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="text-right">Tổng đã nộp: 11,709,000</td>
+                            <td></td>
+                            <td class="text-right">Tổng công nợ: 0</td>
+                            <td>05/08/2023</td>
+                        </tr> 
                         </tbody>
                     </table>
-                </body></html>
+                </body>
+                </html>
